@@ -35,7 +35,7 @@ export default function Navbar() {
                         <p className="profile"><i className="fa-regular fa-user"></i></p>
                         <p><i className="fa-solid fa-cart-shopping"></i> 0</p>
                         <div className='question'>
-                            <i class="fa-regular fa-circle-question fa-2xl"></i>
+                            <i className="fa-regular fa-circle-question fa-2xl"></i>
                         </div>
                     </div>
                 </div>
