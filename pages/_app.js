@@ -1,19 +1,30 @@
 import '../public/assets/css/style.css'
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../partials/Navbar';
+import Footer from '../partials/Footer';
 import Script from 'next/script';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 function MyApp({ Component, pageProps }) {
-  const slideHandler = (e) => {
-    const sideBar     = document.querySelector('.side-bar');
-    const appClass    = document.querySelector('body');
-    const blackblur   = document.querySelector('#blackblur');
-    e.preventDefault();
-    sideBar.classList.remove('slide');
-    appClass.classList.remove('block');
-    blackblur.classList.remove('black-blur');
+  let sideBar;
+  let appClass;
+  let blackblur;
+  if (typeof window !== 'undefined') {
+    sideBar     = document.querySelector('.side-bar');
+    appClass    = document.querySelector('body');
+    blackblur   = document.querySelector('#blackblur');
+    AOS.init();
   }
+
+  const slideHandler = (e) => {
+      e.preventDefault();
+      sideBar.classList.remove('slide');
+      appClass.classList.remove('block');
+      blackblur.classList.remove('black-blur');
+  }
+
 
   return (
     <>

@@ -1,10 +1,15 @@
 export default function Navbar() {
-    const slideHandler = (e) => {
-        const sideBar     = document.querySelector('.side-bar');
-        const appClass    = document.querySelector('body');
-        const blackblur   = document.querySelector('#blackblur');
-        
 
+    let sideBar;
+    let appClass;
+    let blackblur;
+    if (typeof window !== 'undefined') {
+        sideBar     = document.querySelector('.side-bar');
+        appClass    = document.querySelector('body');
+        blackblur   = document.querySelector('#blackblur');
+    }
+
+    const slideHandler = (e) => {
         e.preventDefault();
         sideBar.classList.toggle('slide');
         appClass.classList.toggle('block');
