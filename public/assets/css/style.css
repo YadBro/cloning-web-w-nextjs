@@ -789,28 +789,31 @@ nav ul li a:hover {
   } */
 
   .superiority-main {
+    overflow-x: hidden !important;
+  }
+  
+  .carousel {
+    margin-left: 26%;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap;
-    margin-left: 26%;
     gap: 40%;
     transition: 1s;
-    overflow-x: visible;
   }
 
-  .superiority-main.active{
+  .carousel.active{
     transition: 1s;
-    margin-left: -80% !important;
+    margin-left: -105% !important;
   }
 
-  .superiority-main.active2{
+  .carousel.active2{
     transition: 1s;
-    margin-left: -175% !important;  /* +95% */
+    margin-left: -235% !important;  /* +95% */
   }
 
-  .superiority-main.active3{
+  .carousel.active3{
     transition: 1s;
-    margin-left: -275% !important;
+    margin-left: -365% !important;
   }
 
 

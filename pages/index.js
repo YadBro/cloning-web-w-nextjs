@@ -5,7 +5,7 @@ export default function Home() {
     let carouselItems;
 
     if(typeof window !== 'undefined') {
-        carouselItems = document.querySelector(".superiority-main");
+        carouselItems = document.querySelector(".carousel");
     }
 
     let time = 0;
@@ -54,24 +54,26 @@ export default function Home() {
                     <p>{logo.text}</p>
                 </div>
                 )} */}
-                <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500">
-                    <i className="fa-solid fa-truck fa-xl"></i>
-                    <p>Delivery to PJ/KL (within 50km) Free delivery available*</p>
-                </div>
-                <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500"></div>
-                <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="800">
-                    <i className="fa-regular fa-face-smile fa-xl"></i>
-                    <p>Preorder Basis Freshness Guaranteed</p>
-                </div>
-                <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="800"></div>
-                <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1000">
-                    <i className="fa-regular fa-heart fa-xl"></i>
-                    <p>Finest Ingredients 100% Halal, No Alcohol</p>
-                </div>
-                <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1000"></div>
-                <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1100">
-                    <i className="fa-solid fa-medal fa-xl"></i>
-                    <p>Award Winning Chef Champion of 2016 Asian Pastry Cup</p>
+                <div className="carousel">
+                    <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500">
+                        <i className="fa-solid fa-truck fa-xl"></i>
+                        <p>Delivery to PJ/KL (within 50km) Free delivery available*</p>
+                    </div>
+                    <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500"></div>
+                    <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="800">
+                        <i className="fa-regular fa-face-smile fa-xl"></i>
+                        <p>Preorder Basis Freshness Guaranteed</p>
+                    </div>
+                    <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="800"></div>
+                    <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1000">
+                        <i className="fa-regular fa-heart fa-xl"></i>
+                        <p>Finest Ingredients 100% Halal, No Alcohol</p>
+                    </div>
+                    <div className="barrier" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1000"></div>
+                    <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="1100">
+                        <i className="fa-solid fa-medal fa-xl"></i>
+                        <p>Award Winning Chef Champion of 2016 Asian Pastry Cup</p>
+                    </div>
                 </div>
                 {/* <button className="right">{'>'}</button>
                 <button className="left">{'<'}</button> */}
