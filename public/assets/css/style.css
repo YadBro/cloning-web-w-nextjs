@@ -213,6 +213,13 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
+.carousel {
+  max-width: 1000px !important;
+  margin: 0 17% 50px auto;
+  gap: 3%;
+  display: flex !important;
+}
+
 .superiority-item {
   display: flex;
   cursor: pointer;
