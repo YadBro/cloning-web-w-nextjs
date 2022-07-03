@@ -790,31 +790,35 @@ nav ul li a:hover {
 
   .superiority-main {
     overflow-x: hidden !important;
+    width: 100% !important;
   }
-  
+
   .carousel {
     margin-left: 26%;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap;
+    width: 100% !important;
     gap: 40%;
     transition: 1s;
   }
 
   .carousel.active{
     transition: 1s;
-    margin-left: -115% !important;
+    margin-left: -60% !important;
   }
 
   .carousel.active2{
     transition: 1s;
-    margin-left: -256% !important;  /* +95% */
+    margin-left: -150% !important;  /* +95% */
   }
 
   .carousel.active3{
     transition: 1s;
-    margin-left: -397% !important;
+    margin-left: -235% !important;
   }
+
+
 
 
   
