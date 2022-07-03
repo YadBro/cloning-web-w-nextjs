@@ -808,12 +808,12 @@ nav ul li a:hover {
 
   .carousel.active2{
     transition: 1s;
-    margin-left: -250% !important;  /* +95% */
+    margin-left: -256% !important;  /* +95% */
   }
 
   .carousel.active3{
     transition: 1s;
-    margin-left: -390% !important;
+    margin-left: -397% !important;
   }
 
 
