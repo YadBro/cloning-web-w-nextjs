@@ -795,6 +795,7 @@ nav ul li a:hover {
     margin-left: 26%;
     gap: 40%;
     transition: 1s;
+    overflow-x: visible;
   }
 
   .superiority-main.active{
