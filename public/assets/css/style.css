@@ -803,17 +803,17 @@ nav ul li a:hover {
 
   .carousel.active{
     transition: 1s;
-    margin-left: -105% !important;
+    margin-left: -115% !important;
   }
 
   .carousel.active2{
     transition: 1s;
-    margin-left: -235% !important;  /* +95% */
+    margin-left: -245% !important;  /* +95% */
   }
 
   .carousel.active3{
     transition: 1s;
-    margin-left: -365% !important;
+    margin-left: -375% !important;
   }
 
 
