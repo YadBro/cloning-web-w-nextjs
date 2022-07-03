@@ -4,7 +4,6 @@ import Footer from '../partials/Footer';
 import Script from 'next/script';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 
 function MyApp({ Component, pageProps }) {

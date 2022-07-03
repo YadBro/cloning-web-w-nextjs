@@ -1,5 +1,40 @@
+import { useEffect } from "react";
+
 export default function Home() {
-  return (
+
+    let carouselItems;
+
+    if(typeof window !== 'undefined') {
+        carouselItems = document.querySelector(".superiority-main");
+    }
+
+    let time = 0;
+    useEffect(() => {
+        // console.log(carouselItems[0]);
+        setInterval(() => {
+            if (time >= 10) time = 0;
+            
+            if(time === 2) {
+                carouselItems.classList.remove("active");
+                carouselItems.classList.remove("active2");
+                carouselItems.classList.remove("active3");
+            }else if(time === 4){
+                carouselItems.classList.add("active");
+                carouselItems.classList.remove("active2");
+                carouselItems.classList.remove("active3");
+            }else if (time === 6){
+                carouselItems.classList.remove("active");
+                carouselItems.classList.add("active2");
+            }else if (time === 8){
+                carouselItems.classList.remove("active2");
+                carouselItems.classList.add("active3");
+            }
+            time++;
+            // carouselItems[-1 - time].classList.remove("active");
+        }, 3000);
+    }, []);
+
+    return (
     <>
       {/* BRAND <START> */}
         <div className="content-header" style={{ position: 'relative' }}>
@@ -38,6 +73,8 @@ export default function Home() {
                     <i className="fa-solid fa-medal fa-xl"></i>
                     <p>Award Winning Chef Champion of 2016 Asian Pastry Cup</p>
                 </div>
+                {/* <button className="right">{'>'}</button>
+                <button className="left">{'<'}</button> */}
                 {/* <div className="barrier"></div> */}
             </div>
         </div>
