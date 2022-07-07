@@ -16,7 +16,7 @@ export default function Navbar() {
         blackblur.classList.toggle('black-blur');
     }
     return(
-        <div className="navbar">
+        <div className="navbar" data-testid="navbar">
             <header className="upHeader">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit neque odit quisquam exercitationem a voluptas ex ratione veniam iste officia, corrupti aliquid repudiandae veritatis quae facilis?</p>
             </header>
@@ -46,7 +46,7 @@ export default function Navbar() {
                 </div>
 
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="www.google.com">Home</a></li>
                     <li><a href="#same-day-delivery">Same Day Delivery</a></li>
                     <li><a href="#preorder">1 Day Preorder</a></li>
                     <li><a href="#products">All Products</a></li>

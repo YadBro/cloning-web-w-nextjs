@@ -1,7 +1,7 @@
 export default function footer(){
     return(
         <>
-            <section id="footer">
+            <section id="footer" data-testid="footer">
                 <div className="footer">
                     <div className="item">
                         <b>Lachér Patisserie</b>
